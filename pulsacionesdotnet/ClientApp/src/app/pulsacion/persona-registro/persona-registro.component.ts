@@ -12,6 +12,7 @@ export class PersonaRegistroComponent implements OnInit {
   sex:string;
   durations=[{ title: "Femenino", value: "femenino" }, 
     { title: "masculino", value: "masculino" }];
+
   constructor(private personaService: PersonaService) { }
   ngOnInit(): void {
     this.persona = new Persona;
@@ -20,8 +21,10 @@ export class PersonaRegistroComponent implements OnInit {
   add(){
     this.persona.calcularpul();
     this.personaService.post(this.persona).subscribe(p=>{
-      alert('Se agrego una nueva persona');
-      console.log(this.sex);
+      if(p!=null){
+        alert('Se agrego una nueva persona');
+        this.persona=p;
+      }
     });
   }
 

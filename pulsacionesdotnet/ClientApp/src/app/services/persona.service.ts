@@ -1,28 +1,38 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Persona } from '../pulsacion/models/persona';
+import { catchError, tap} from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonaService {
-
-  constructor() { }
-
-  get(): Observable<Persona[]> {
-    let personas: Persona[] = [];
-    personas=JSON.parse(localStorage.getItem('datos'));
-    return of(personas);
-  }
-
-  post(persona: Persona):Observable<Persona>{
-    let personas: Persona[] = [];
-    let localeDatos=localStorage.getItem('datos');
-    if(localeDatos!=null){
-      personas = JSON.parse(localeDatos);
+  baseUrl:string
+  constructor(private http:HttpClient,
+    @Inject ('BASE_URL') baseUrl : string) { 
+      this.baseUrl=baseUrl;
     }
-    personas.push(persona);
-    localStorage.setItem('datos',JSON.stringify(personas));
-    return of(persona);
+
+    get():Observable<Persona[]>{
+      return this.http.get<Persona[]>(this.baseUrl+'api/persona').pipe(
+        tap(),
+        catchError(error=>{
+          console.log('se ha presentado un error al registrar los datos')
+          return of(error as Persona[])
+        })
+      );
+      
+    }
+
+  post(persona:Persona):Observable<Persona>{
+    return this.http.post<Persona>(this.baseUrl+'api/persona',persona).pipe(
+      tap(_=>console.log("Los datos se guardaron Stisfactoriamente")),
+      catchError(error=>{
+        console.log('se ha presentado un error al registrar los datos')
+        return of(persona)
+      })
+    )
+
   }
 }

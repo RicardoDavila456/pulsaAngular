@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nf+TxSIVEqMXifU1vonyRfXVto7Gazb3FSqXuyM9bd9JmdC4yrHiC1M6JhhBcXPzJis1Mn1fbqP+TTXJY8hEFQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DAVILA\\Desktop\\pulsaAngular\\Entidad\\Entidad.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DAVILA\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\bin\Debug\net5.0\Entidad.deps.json
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\bin\Debug\net5.0\Entidad.dll
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\bin\Debug\net5.0\ref\Entidad.dll
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\bin\Debug\net5.0\Entidad.pdb
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\obj\Debug\net5.0\Entidad.csprojAssemblyReference.cache
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\obj\Debug\net5.0\Entidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\obj\Debug\net5.0\Entidad.AssemblyInfoInputs.cache
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\obj\Debug\net5.0\Entidad.AssemblyInfo.cs
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\obj\Debug\net5.0\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\obj\Debug\net5.0\Entidad.dll
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\obj\Debug\net5.0\ref\Entidad.dll
+C:\Users\DAVILA\Desktop\pulsaAngular\Entidad\obj\Debug\net5.0\Entidad.pdb
