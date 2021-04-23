@@ -14,30 +14,19 @@ namespace pulsacionesdotnet.Controllers
 
     public class PersonaController : ControllerBase{
         private readonly PersonaService _personaService;
-        public IConfiguration Configuration { get; }
-        public PersonaController(IConfiguration configuration)
+        public PersonaController(PulsacionesContext context)
         {
-        Configuration = configuration;
-        string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-        _personaService = new PersonaService(connectionString);
+            _personaService=new PersonaService(context);
         }
 
 
         [HttpGet]
         public IEnumerable<PersonaViewModel> Gets()
         {
-        var personas = _personaService.ConsultarTodos().Select(p=> new PersonaViewModel(p));
+        var personas = _personaService.ConsultarTodos().Personas.Select(p=> new PersonaViewModel(p));
         return personas;
         }
 
-        [HttpGet("{identificacion}")]
-        public ActionResult<PersonaViewModel> Get(string identificacion)
-        {
-        var persona = _personaService.BuscarxIdentificacion(identificacion);
-        if (persona == null) return NotFound();
-        var personaViewModel = new PersonaViewModel(persona);
-        return personaViewModel;
-        }
 
         [HttpPost]
         public ActionResult<PersonaViewModel> Post(PersonaInputModel personaInput)

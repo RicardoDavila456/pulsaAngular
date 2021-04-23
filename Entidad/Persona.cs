@@ -1,9 +1,11 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace Entidad
 {
     public class Persona
     {
+        [Key]
         public string Identificacion { get; set;}
         public string Nombre { get; set;}
         public int Edad { get; set; }

@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System;
+using Datos;
+using Microsoft.EntityFrameworkCore;
 
 namespace pulsacionesdotnet
 {
@@ -22,6 +24,9 @@ namespace pulsacionesdotnet
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString=Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<PulsacionesContext>(p=>p.UseSqlServer(connectionString));
+
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
@@ -79,7 +84,6 @@ namespace pulsacionesdotnet
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                    c.RoutePrefix = string.Empty;
                 });
             app.UseRouting();
 
