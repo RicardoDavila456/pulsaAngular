@@ -1,0 +1,17 @@
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\bin\Release\net5.0\Logica.deps.json
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\bin\Release\net5.0\Logica.dll
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\bin\Release\net5.0\ref\Logica.dll
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\bin\Release\net5.0\Logica.pdb
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\bin\Release\net5.0\Datos.dll
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\bin\Release\net5.0\Entidad.dll
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\bin\Release\net5.0\Entidad.pdb
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\bin\Release\net5.0\Datos.pdb
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\obj\Release\net5.0\Logica.csprojAssemblyReference.cache
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\obj\Release\net5.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\obj\Release\net5.0\Logica.AssemblyInfoInputs.cache
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\obj\Release\net5.0\Logica.AssemblyInfo.cs
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\obj\Release\net5.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\obj\Release\net5.0\Logica.csproj.CopyComplete
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\obj\Release\net5.0\Logica.dll
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\obj\Release\net5.0\ref\Logica.dll
+C:\Users\DAVILA\Desktop\pulsaAngular\Logica\obj\Release\net5.0\Logica.pdb

@@ -33,6 +33,5 @@ export class PersonaService {
         return of(persona)
       })
     )
-
   }
 }

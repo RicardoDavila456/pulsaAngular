@@ -42,7 +42,7 @@ namespace pulsacionesdotnet.Controllers
 
         // DELETE: api/Persona/5
         [HttpDelete("{identificacion}")]
-        public ActionResult<string> Delete(string identificacion)
+        public ActionResult<string> Delete(string identificacion) 
         {
         string mensaje = _personaService.Eliminar(identificacion);
         return Ok(mensaje);

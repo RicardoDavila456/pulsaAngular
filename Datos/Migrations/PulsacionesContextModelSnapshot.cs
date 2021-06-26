@@ -21,6 +21,7 @@ namespace Datos.Migrations
             modelBuilder.Entity("Entidad.Persona", b =>
                 {
                     b.Property<string>("Identificacion")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Edad")

@@ -9,7 +9,7 @@ export class Persona {
 
     calcularpul(){
         if(this.sexo=="femenino"){
-            this.pulsacion=(220-this.edad)/10;
+            this.pulsacion=(220-this.edad)/10; 
         }else{
             this.pulsacion=(210-this.edad)/10;
         }
